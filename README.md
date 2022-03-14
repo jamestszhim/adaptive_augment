@@ -7,10 +7,14 @@ AdaAug: Learning class- and instance-adaptive augmentation policies.
 2. [Getting Started](#getting-started)
 3. [Run Search](#run-adaaug-search)
 4. [Run Training](#run-adaaug-training)
+5. [Citation](#citation)
+6. [References & Opensources](#references-&-opensources)
 
 ### Introduction
 
-AdaAug is a framework that finds class- and instance-adpative augmentation policy to augment a given dataset.
+AdaAug is a framework that finds class- and instance-adaptive data augmentation policies to augment a given dataset.
+
+This repository contains code for the work "AdaAug: Learning class- and instance-adaptive data augmentation policies" (https://openreview.net/forum?id=rWXfFogxRJN) implemented using the PyTorch library.
 
 ### Getting Started
 Code supports Python 3.
@@ -38,3 +42,20 @@ To use the searched policy, paste the path of the g_model and h_model as the G a
 ```shell
 bash scripts/train.sh reduced_svhn
 ```
+
+### Citation
+If you use this code in your research, please cite our paper.
+```
+@inproceedings{cheung2022adaaug,
+  title     =  {AdaAug: Learning class and instance-adaptive data augmentation policies},
+  author    =  {Tsz-Him Cheung and Dit-Yan Yeung},
+  booktitle =  {International Conference on Learning Representations},
+  year      =  {2022},
+  url       =  {https://openreview.net/forum?id=rWXfFogxRJN}
+}
+```
+
+### References & Opensources
+Part of our implementation is adopted from the Fast AutoAugment and DADA repositories.
+- Fast AutoAugment (https://github.com/kakaobrain/fast-autoaugment)
+- DADA (https://github.com/VDIGPKU/DADA)
